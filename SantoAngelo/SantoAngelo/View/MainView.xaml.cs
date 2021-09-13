@@ -29,5 +29,10 @@ namespace SantoAngelo.View
 
             MapContainer.Children.Add(mapa);
         }
+
+        private async void openCatedralView(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AtrativosView.CatedralView());
+        }
     }
 }

@@ -104,6 +104,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Aeroporto.jpg" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />
@@ -131,12 +132,18 @@
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="avenidaBrasil.jpg" />
     <Content Include="catedralInicial.jpg" />
+    <Content Include="fireman.png" />
+    <Content Include="hospital.png" />
+    <Content Include="location.png" />
     <Content Include="logoInicial.jpg" />
     <Content Include="memorialcolunaprestes.jpg" />
     <Content Include="museudocinema.jpg" />
     <Content Include="museuferroviario.jpg" />
     <Content Include="museumunicipal.jpg" />
+    <Content Include="policeman.png" />
+    <Content Include="pracaCentral.jpg" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>

@@ -57,6 +57,7 @@ namespace SantoAngelo.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
                 Xamarin.Forms.Forms.Init(e);
+                Xamarin.FormsMaps.Init("8IhbrpOoCWhgdV2NIq1X~CCOFvkn2_bcUswU4b4FmEQ~AmJhi90Ah1E2r7gdaQIw5iQ3zqTNrNIsHaoGOa3GQwHBso95cAcwdpNUPbtEjC2V");
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
