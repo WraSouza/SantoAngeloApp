@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"        
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"   
+             xmlns:mvvm="clr-namespace:SantoAngelo.ViewModel"
              Title="Santo Ângelo"
              x:Class="SantoAngelo.View.MainView">
+
+    <ContentPage.BindingContext>
+        <mvvm:MainViewModel/>
+    </ContentPage.BindingContext>
+    
     <ContentPage.Content>            
        
         <Grid BackgroundColor="Black">
@@ -61,9 +67,17 @@
                         <Image Source="catedralInicial.jpg"
                                Aspect="Fill"
                                Grid.Column="0"
+                               Grid.Row="0"/>
+
+
+                        <Image Source="camera.png"
+                               Margin="0,0,10,0"
+                               HorizontalOptions="End"
+                               VerticalOptions="EndAndExpand"
+                               Grid.Column="0"
                                Grid.Row="0">
                             <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="openCatedralView"/>
+                                <TapGestureRecognizer Command="{Binding OpenCatedralView}"/>
                             </Image.GestureRecognizers>
                         </Image>
 
@@ -71,6 +85,17 @@
                                Aspect="Fill"
                                Grid.Column="1"
                                Grid.Row="0"/>
+
+                        <Image Source="camera.png"
+                               Margin="0,0,10,0"
+                               HorizontalOptions="End"
+                               VerticalOptions="EndAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenMuseuCinemaView}"/>
+                            </Image.GestureRecognizers>
+                        </Image>
 
                         <Image Source="museumunicipal.jpg"
                                Aspect="Fill"

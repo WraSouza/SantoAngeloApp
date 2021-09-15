@@ -4,10 +4,60 @@
              Title="Catedral Angelopolitana"
              x:Class="SantoAngelo.AtrativosView.CatedralView">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <ScrollView>
+        <StackLayout Margin="10,20,10,0">
+            
+            <Label Text="Localização"
+                   TextColor="Black"
+                   FontSize="20"/>
+
+            <StackLayout x:Name="MapContainer" HeightRequest="200">
+                
+            </StackLayout>
+
+            <Label Text="Imagens"
+                   Margin="0,10,0,0"
+                   TextColor="Black"
+                   FontSize="20"/>
+
+            <Grid RowDefinitions="180,180,180,180">
+                <Image Source="catedralInicial.jpg"
+                       Aspect="Fill"
+                       Grid.Column="0"
+                       Grid.Row="0"/>
+
+                <Image Source="catedralInterno.jpg"
+                       Aspect="Fill"
+                       Grid.Column="1"
+                       Grid.Row="0"/>
+
+                <Image Source="catedralInterno1.jpg"
+                       Aspect="Fill"
+                       Grid.Column="0"
+                       Grid.Row="1"/>
+
+                <Image Source="catedralInterno2.jpg"
+                       Aspect="Fill"
+                       Grid.Column="1"
+                       Grid.Row="1"/>
+
+                <Image Source="catedralInterno3.jpg"
+                       Aspect="Fill"
+                       Grid.Column="0"
+                       Grid.Row="2"/>
+
+                <Image Source="catedralInterno4.jpg"
+                       Aspect="Fill"
+                       Grid.Column="1"
+                       Grid.Row="2"/>
+
+                <Image Source="catedralInterno5.jpg"
+                       Aspect="Fill"
+                       Grid.Column="0"
+                       Grid.Row="3"/>
+            </Grid>
+            
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

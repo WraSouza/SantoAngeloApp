@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms.Maps;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SantoAngelo.ViewModel;
 
 namespace SantoAngelo.View
 {
@@ -15,6 +16,8 @@ namespace SantoAngelo.View
         public MainView()
         {
             InitializeComponent();
+
+            BindingContext = new MainViewModel(Navigation);
 
             var mapa = new Map(MapSpan.FromCenterAndRadius(new Position(-28.3049427, -54.2650362), Distance.FromKilometers(250)));
             mapa.MapType = MapType.Street;
@@ -30,9 +33,9 @@ namespace SantoAngelo.View
             MapContainer.Children.Add(mapa);
         }
 
-        private async void openCatedralView(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new AtrativosView.CatedralView());
-        }
+        //private async void openCatedralView(object sender, EventArgs e)
+        //{
+        //    await Navigation.PushAsync(new AtrativosView.CatedralView());
+        //}
     }
 }
